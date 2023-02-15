@@ -44,11 +44,21 @@ const Keep = () => {
     };
     //A node is Deleted
     const deleteNote = (id) => {
+        if(id=== updateId)
+        {
+            Swal.fire({
+                title: "Error!",
+                text: "Item is currently in use",
+                icon: "error",
+            });
+        }
+        else{
         setArr((previous) => {
             return arr.filter((item, index) => {
                 return index != id;
             });
         });
+    }
     };
 
     //Note is typed

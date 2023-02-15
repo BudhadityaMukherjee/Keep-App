@@ -21,3 +21,7 @@
 .title-text::value{
     font-size: 25px;
 }
+.update{
+    max-width: 100 px;
+    width: auto;
+}

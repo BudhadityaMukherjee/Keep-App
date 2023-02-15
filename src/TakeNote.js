@@ -5,7 +5,7 @@ import TakeNoteBtn from "./TakeNoteBtn";
 const TakeNote = (props) => {
   return (
     <>
-      <div className="container border border-dark rounded-3 notebox">
+      <div className="container border border-dark rounded-3 notebox  card">
         <form action="" className="my-5">
           <div className="form-group my-3">
             <input
