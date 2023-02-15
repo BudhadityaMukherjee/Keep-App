@@ -34,7 +34,7 @@ const Keep = () => {
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
                     updateTick();
-                    Swal.fire("Saved!", "", "success");
+                    Swal.fire("Chanes are Saved!", "", "success");
                 } else if (result.isDenied) {
                     updateCross();
                     Swal.fire("Changes are not saved", "", "info");
@@ -98,6 +98,7 @@ const Keep = () => {
                     content: "",
                 });
                 setBool(false)
+                Swal.fire("Changes are Saved!", "", "success");
                 return [...previous];
             } else {
                 Swal.fire({
@@ -119,7 +120,7 @@ const Keep = () => {
             title: "",
             content: "",
         });
-        Swal.fire("Changes are not saved", "", "info");
+        Swal.fire("Changes are not saved!", "", "info");
     };
     return (
         <>
